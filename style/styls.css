@@ -1,0 +1,37 @@
+:root{
+    --positive:forestgreen;
+    --negative:maroon;
+    --soon:goldenrod;
+}
+
+/*body {
+	background: #181a1c;
+	color: silver;
+}
+.comment-ays, .feature-filter, .imgedit-group, .popular-tags, .stuffbox, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
+    background: #cecece;
+}
+*/
+
+.expired-subscription{
+    color:var(--negative);
+}
+.expired-subscription::after{
+    content:"expired!";
+    background-color: var(--negative);
+    color:whitesmoke;
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0 5px;
+}
+.expiring-soon-subscription{
+    color:var(--soon);
+}
+.expiring-soon-subscription::after{
+    content:"expiring soon!";
+    background-color: var(--soon);
+    color:whitesmoke;
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0 5px;
+}
