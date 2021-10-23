@@ -1,0 +1,67 @@
+.client-info {
+	text-align: left;
+	display: flex;
+	flex-wrap: wrap;
+}
+.client-info > * {flex:1;}
+
+.client-info th{text-align:left; padding:20px 0;}
+.client-info th input {
+	font-size: x-large;
+	font-weight: lighter;
+	border: none;
+	width: 205px;
+}
+
+
+textarea#transactions {
+	display: none;
+}
+#new-transaction {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+#new-transaction p {
+	align-items: inherit;
+	display: flex;
+	justify-content: space-between;
+}
+
+#transactions_list {
+	width: 90%;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+	#transactions_list th {
+		text-align: left;
+		text-transform: capitalize;
+	}
+	#transactions_list tr:nth-child(2n) {background: whitesmoke;}
+	#transactions_list tr.income {color: green;}
+	#transactions_list tr.outcome {color: maroon;}
+	#transactions_list td {padding: 5px;}
+	#transactions_list tr td:last-child {color: red;}
+	#transactions_list tr td:last-child:hover {cursor:pointer;}
+
+.client-info .total-info label {
+	font-weight: bold;
+	padding: 0;
+}
+.client-info .total-info p {
+	font-size: large;
+	font-weight: lighter;
+	padding: 0;
+	margin: 0;
+}
+.client-info .total-info.balance p {
+	font-size: xx-large;
+}
+.client-info .total-info.charged p {
+	color: maroon;
+	font-size:medium;
+}
+.client-info .total-info.payed p {
+	color: forestgreen;
+	font-size:medium;
+}
